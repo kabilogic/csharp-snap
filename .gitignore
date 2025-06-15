@@ -1,0 +1,6 @@
+HelloCsharpApp/bin/
+HelloCsharpApp/obj/
+HelloCsharpApp/publish/
+*.snap
+.snapcraft/
+*.log
