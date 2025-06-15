@@ -1,0 +1,27 @@
+name: hello-csharp
+base: core22
+version: '1.0.0'
+summary: A self-contained C# console app
+description: |
+  Simple snap for a standalone .NET app using Snapcraft
+
+grade: stable
+confinement: strict
+
+parts:
+  hello-csharp:
+    plugin: dump
+    source: HelloCsharpApp/publish
+    stage-packages:
+      - libicu70  # 🔁 required ICU library
+    organize:
+      HelloCsharpApp: bin/HelloCsharpApp
+    override-build: |
+      chmod +x HelloCsharpApp
+      snapcraftctl build
+
+apps:
+  hello-csharp:
+    command: bin/HelloCsharpApp
+    plugs:
+      - network
