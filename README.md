@@ -62,6 +62,7 @@ parts:
 This ensured that the ICU (International Components for Unicode) library — which .NET uses for globalization and string operations — is bundled into the Snap during the build.
 ---
 ## References
+```
 https://snapcraft.io/docs
 https://learn.microsoft.com/en-us/dotnet/core/deploying/
 https://learn.microsoft.com/en-us/dotnet/core/runtime-config/globalization
