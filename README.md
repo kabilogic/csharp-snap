@@ -60,7 +60,7 @@ parts:
       - libicu70
 ```
 This ensured that the ICU (International Components for Unicode) library — which .NET uses for globalization and string operations — is bundled into the Snap during the build.
----
+
 ## References
 - [Snapcraft Documentation](https://snapcraft.io/docs)
 - [.NET Deployment Guide](https://learn.microsoft.com/en-us/dotnet/core/deploying/)
